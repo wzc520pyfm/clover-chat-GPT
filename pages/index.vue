@@ -1,11 +1,7 @@
 <template>
-  <Tutorial />
+  <OpenaiExample />
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script setup lang="ts">
 
-export default Vue.extend({
-  name: 'IndexPage',
-})
 </script>
