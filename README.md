@@ -3,7 +3,7 @@
 ## Quick Start
 
 1. 注册一个openai帐号,获取token(token获取页: https://beta.openai.com/account/api-keys)
-2. 将你的token替换到`components/OpenaiExample.vue`的29行
+2. 将你的token替换到`components/OpenaiExample.vue`的33行
    ```js
    const configuration = new Configuration({
       organization: "org-mvGmOG9Wjd3szwU5aeeUt9NO",
