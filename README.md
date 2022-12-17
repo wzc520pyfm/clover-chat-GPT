@@ -36,10 +36,21 @@ $ yarn generate
 3. 服务器安装yarn `npm install --global yarn`
 4. 服务器安装pm2 `npm install pm2 -g`
 5. 在你喜欢的目录下克隆本项目 `git clone https://github.com/wzc520pyfm/clover-chat-GPT.git`
-6. 进入项目目录 `cd clover-chat-GPT`
+6. 进入项目目录 `cd clover-chat-GPT`, 更换你的OpenAI_Key(参照QuickStart)
 7. 安装依赖 `yarn`
 8. 项目打包 `yarn build`
 9. 启动项目 `pm2 start`
 10. 项目启动在3000端口, 确保3000端口未被占用, 且服务器安全组放通3000端口
-11. 通过服务器ip:3000即可访问
-12. 最后可使用nginx配置域名转发(略)
+11. 通过服务器ip:3000即可访问, 若无法访问则使用nginx转发3000端口
+12. 最后可使用nginx配置域名转发
+    1.  ```nginx
+          server {
+            listen 5577;
+            server_name openai;
+            location / {
+              proxy_pass http://localhost:3000;
+            }
+          }
+        ```
+    2. 服务器放通5577端口
+    3. 使用ip:5577访问项目
