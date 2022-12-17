@@ -13,7 +13,7 @@ v-model:value="question"
     </div>
     <no-ssr>
       <mavon-editor
-v-model="res" :toolbars="{}" :editable="true" :subfield="false" default-open="false"
+v-model="res" :toolbars="{}" :editable="true" :subfield="false" default-open="preview"
         :toolbars-flag="false" class="markdown-body" style="width: 100%; height: 60vmin;">
       </mavon-editor>
     </no-ssr>
