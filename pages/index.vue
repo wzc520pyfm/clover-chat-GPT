@@ -1,5 +1,5 @@
 <template>
-  <OpenaiExample />
+  <OpenAI />
 </template>
 
 <script setup lang="ts">

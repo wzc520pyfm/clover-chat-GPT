@@ -1,11 +1,12 @@
 # clover-chat-GPT
 
 <img src="pic/example.png" />
+<img src="pic/drawExample.png" />
 
 ## Quick Start
 
 1. 注册一个openai帐号,获取token(token获取页: https://beta.openai.com/account/api-keys)
-2. 将你的token替换到`components/OpenaiExample.vue`的33行
+2. 将你的token替换到`composables/openai.ts`的第6行
    ```js
    const configuration = new Configuration({
       organization: "org-mvGmOG9Wjd3szwU5aeeUt9NO",
