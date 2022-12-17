@@ -1,5 +1,7 @@
 # clover-chat-GPT
 
+<img src="pic/example.png" />
+
 ## Quick Start
 
 1. 注册一个openai帐号,获取token(token获取页: https://beta.openai.com/account/api-keys)
