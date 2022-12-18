@@ -1,6 +1,11 @@
 <template>
   <div class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center sm:pt-0">
     <h2 style="text-align: center; margin-top: 3px;">{{ componentVue.title }}</h2>
+    <div style="position:absolute;top:0;margin: 0px 10px;">
+      <a href="https://github.com/wzc520pyfm/clover-chat-GPT" target="_blank">
+        <a-button type="link" size="large" icon="github"></a-button>
+      </a>
+    </div>
     <div style="position:absolute;top:0;right: 5px; display: flex;justify-content: flex-end;gap: 5px;margin: 10px;">
       <span style="vertical-align: middle;">作画</span>
       <a-switch default-checked @change="onChange" />
