@@ -33,6 +33,7 @@
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
     "@nuxtjs/eslint-module": "^3.1.0",
+    "@unocss/nuxt": "0.46.3",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-nuxt": "^4.0.0",

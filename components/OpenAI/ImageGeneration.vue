@@ -1,9 +1,9 @@
 <!-- eslint-disable vue/no-v-model-argument -->
 <template>
-  <div class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center sm:pt-0">
-    <a-spin :spinning="isLoading" size="large" tip="思考中..." style="height: 70vh;text-align: center;">
-      <img v-if="resUrl" :src="resUrl" style="width: 70vmin;height: 70vmin; margin-top: 1vmin;" />
-      <div style="position: fixed; bottom: 50px; left: 0;right: 0; text-align: center;">
+  <div class=" bg-gray-100">
+    <a-spin :spinning="isLoading" size="large" tip="思考中..." class="h-70vh text-center">
+      <img v-if="resUrl" :src="resUrl" class="w-70vmin h-70vmin mt-1vmin" />
+      <div class="fixed bottom-50px left-0 right-0 text-center">
         <a-input-group compact>
           <a-input
 v-model:value="description" placeholder="描述一幅画, 让AI来绘制"

@@ -22,6 +22,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@unocss/nuxt',
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
   ],
@@ -31,7 +32,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
+    '@nuxtjs/pwa'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -49,4 +50,12 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  unocss: {
+    attributify: true,
+    icons: true,
+    components: false,
+    shortcuts: [
+      ['flex-x-end', 'flex justify-end'],
+    ],
+  },
 }

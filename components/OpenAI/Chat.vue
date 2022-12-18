@@ -1,8 +1,8 @@
 <!-- eslint-disable vue/no-v-model-argument -->
 <template>
-  <div class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center sm:pt-0">
+  <div class="bg-gray-100">
     <a-spin :spinning="isLoading" size="large" tip="思考中...">
-      <div style="position: fixed; bottom: 50px; left: 0;right: 0; text-align: center;">
+      <div class="fixed bottom-50px left-0 right-0 text-center">
         <a-input-group compact>
           <a-input v-model:value="question" placeholder="可以问AI任何问题"
             style="width: calc(100% - 200px); box-shadow: rgb(0 0 0 / 10%) 0px 2px 12px 0px;" />
@@ -11,7 +11,7 @@
       </div>
       <no-ssr>
         <mavon-editor v-model="res" :toolbars="{}" :editable="true" :subfield="false" default-open="preview"
-          :toolbars-flag="false" class="markdown-body" style="width: 100%; height: 60vmin;">
+          :toolbars-flag="false" class="markdown-body w-100% h-60vh">
         </mavon-editor>
       </no-ssr>
     </a-spin>
